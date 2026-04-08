@@ -6,9 +6,9 @@ class MainPageLocators:
     logo_button = (By.XPATH, ".//div[@class = 'AppHeader_header__logo__2D0X2']") # Кнопка главной страницы сайта (Логотип)
     personal_account_button = (By.XPATH, ".//p[text() = 'Личный Кабинет']") # Кнопка личного кабинета
     login_account_button = (By.XPATH, ".//button[text() = 'Войти в аккаунт']") # Кнопка войти в аккаунт
-    buns_button = (By.XPATH, ".//span[text() = 'Булки']") # Кнопка переключения на Булки
-    sauces_button = (By.XPATH, ".//span[text() = 'Соусы']") # Кнопка переключения на Соусы
-    toppings_button = (By.XPATH, ".//span[text() = 'Начинки']") # Кнопка переключения на Начинки
+    buns_button = (By.XPATH, ".//span[text() = 'Булки']/parent::div") # Кнопка переключения на Булки
+    sauces_button = (By.XPATH, ".//span[text() = 'Соусы']/parent::div") # Кнопка переключения на Соусы
+    toppings_button = (By.XPATH, ".//span[text() = 'Начинки']/parent::div") # Кнопка переключения на Начинки
     place_order_button = (By.XPATH, ".//button[text() = 'Оформить заказ']") # Кнопка Оформить заказ
     sauces = (By.XPATH, ".//h2[text() = 'Соусы']") # Текст Соусы на главной странице
     buns = (By.XPATH, ".//h2[text() = 'Булки']") # Текст Булки на главной странице
